@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayyad Mufassir | Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Sayyad Mufassir, a Full Stack Developer from Osmanabad building clean, responsive websites.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <!-- icons ek baar define, baar baar use -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-gh" viewBox="0 0 24 24">
+            <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+        </symbol>
+        <symbol id="i-in" viewBox="0 0 24 24">
+            <path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24">
+            <path d="M2 4h20v16H2V4Zm2 2v.5l8 5 8-5V6H4Zm16 3L12 14 4 9v9h16V9Z" />
+        </symbol>
+        <symbol id="i-wa" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"
+                d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.4 8.4 0 1 1 21 11.5Z" />
+        </symbol>
+        <symbol id="i-dl" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14" />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                d="M7 17 17 7M8 7h9v9" />
+        </symbol>
+    </svg>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="nav" id="nav" aria-label="Main navigation">
+        <div class="wrap nav-in">
+            <a href="#home" class="logo">MS<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Hire me</a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header class="hero" id="home">
+        <div class="wrap hero-grid">
+            <div>
+                <h1>Sayyad Mufassir</h1>
+                <p class="role">Full Stack Developer</p>
+                <p class="bio">I build clean, fast and responsive websites. I turn designs into pixel-perfect pages with
+                    HTML, CSS and JavaScript, and connect them to PHP and MySQL backends.</p>
+                <div class="cta">
+                    <a href="https://github.com/repos" target="_blank" rel="noopener"><span class="icon"><svg
+                                aria-hidden="true">
+                                <use href="#i-gh" />
+                            </svg></span>GitHub</a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener"><span class="icon"><svg
+                                aria-hidden="true">
+                                <use href="#i-in" />
+                            </svg></span>LinkedIn</a>
+                    <a href="mailto:mufassirsayyed03@gmail.com" class="primary"><span class="icon"><svg
+                                aria-hidden="true">
+                                <use href="#i-mail" />
+                            </svg></span>Connect With me</a>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2gkM6srmOjqDAXiJpajsocSonZjD8Vw4VvLilEVkEmw&s=10"
+                    alt="image">
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+        <div class="pull" id="pull" aria-hidden="true"></div>
+        <div class="wrap">
+            <h2>About me</h2>
+            <p class="lead">A developer who cares about the small details users actually notice.</p>
+            <div class="about-grid">
+                <div>
+                    <p>Hi, I'm Sayyad Mufassir, a Full Stack Developer from Osmanabad, Maharashtra. I enjoy the moment
+                        when a plain design starts to move, react and feel alive in the browser.</p>
+                    <p>I finished my BCS in 2024 and started working professionally right away. At Siddham Infotech
+                        Services I build responsive pages, fix cross-browser issues and work with the backend team on
+                        PHP and MySQL features.</p>
+                    <p>I like writing clean code that is easy to read, easy to change and quick to load.</p>
+                </div>
+                <div>
+                    <h2>Skills</h2>
+                    <div class="skills">
+                        <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript (ES6+)</span>
+                        <span>PHP</span><span>REST API</span><span>SQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services" id="services">
+        <div class="wrap">
+            <h2>What I can build</h2>
+            <p class="lead">From the interface users see to the database behind it, I can take a project from idea to a
+                working product.</p>
+            <div class="service-grid">
+                <article class="service-card">
+                    <h3>End-to-End Web Applications</h3>
+                    <p>Building robust apps from scratch, seamlessly connecting interactive UIs with scalable backend
+                        logic.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span></div>
+                </article>
+                <article class="service-card">
+                    <h3>Database Design &amp; Architecture</h3>
+                    <p>Structuring relational (SQL) databases for secure and fast data management.</p>
+                    <div class="tags"><span>SQL</span><span>MySQL</span><span>Schema design</span></div>
+                </article>
+                <article class="service-card">
+                    <h3>API Development &amp; Integration</h3>
+                    <p>Designing custom RESTful APIs and integrating third-party services smoothly.</p>
+                    <div class="tags"><span>REST API</span><span>JSON</span><span>PHP</span></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="work" id="work">
+        <div class="wrap">
+            <h2>My Work</h2>
+            <p class="lead">Live websites I have built. Click a card to see the real thing.</p>
+            <div class="work-grid">
+                <article class="work-card">
+                    <div class="shot">
+                        <div class="shot-bar"><i></i><i></i><i></i><span>https://siddhaminfotech.com</span></div>
+                        <div class="shot-body"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiWgUny9siugOOFycfm54QSj0hFZQWQp45IGRaxytO_g&s=10"
+                                alt=""></div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-type">Company Website</div>
+                        <h3>Siddham Infotech Services</h3>
+                        <p>The official website of Siddham Infotech Services Pvt Ltd, where I work as a developer. A
+                            clean, responsive site that presents the company and its services to clients.</p>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
+                        </div>
+                        <a class="visit" href="https://siddhaminfotech.com" target="_blank" rel="noopener">Visit website
+                            <span class="icon"><svg aria-hidden="true">
+                                    <use href="#i-arrow" />
+                                </svg></span></a>
+                    </div>
+                </article>
+                <article class="work-card">
+                    <div class="shot">
+                        <div class="shot-bar"><i></i><i></i><i></i><span>https://plmscs</span>
+                        </div>
+                        <div class="shot-body"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaO-tCK3Fdp6uzKOB4qKtTkWgC5KC-08VM4oz5pWDdBg&s=10"
+                                alt=""></div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-type">Banking Website</div>
+                        <h3>Pavanraje Loksamruddhi Multistate</h3>
+                        <p>A website built for a bank, focused on a trustworthy look, clear information about its
+                            services, and a layout that works smoothly on phones and desktops.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span></div>
+                        <a class="visit" href="https://plmscs" target="_blank" rel="noopener">Visit website
+                            <span class="icon"><svg aria-hidden="true">
+                                    <use href="#i-arrow" />
+                                </svg></span></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+        <div class="wrap contact-grid">
+            <div>
+                <h2>Let's work together</h2>
+                <p class="lead">Have a project in mind or want to hire me? Reach out on any of these and I will get back
+                    to you soon.</p>
+                <div class="cta">
+                    <a href="resume.pdf" download class="primary"><span class="icon"><svg aria-hidden="true">
+                                <use href="#i-dl" />
+                            </svg></span>Download Resume</a>
+                </div>
+            </div>
+            <div class="contact-cards">
+                <a class="c-card" href="https://wa.me/919371544016" target="_blank" rel="noopener">
+                    <span class="c-icon"><svg aria-hidden="true">
+                            <use href="#i-wa" />
+                        </svg></span>
+                    <span class="c-text"><small>WhatsApp</small><b>+91 93715 44016</b></span>
+                </a>
+                <a class="c-card" href="mailto:mufassirsayyed03@gmail.com">
+                    <span class="c-icon"><svg aria-hidden="true">
+                            <use href="#i-mail" />
+                        </svg></span>
+                    <span class="c-text"><small>Email</small><b>mufassirsayyed03@gmail.com</b></span>
+                </a>
+                <a class="c-card" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">
+                    <span class="c-icon"><svg aria-hidden="true">
+                            <use href="#i-in" />
+                        </svg></span>
+                    <span class="c-text"><small>LinkedIn</small><b>Mufassir Sayyed</b></span>
+                </a>
+                <a class="c-card" href="https://github.com/repos" target="_blank" rel="noopener">
+                    <span class="c-icon"><svg aria-hidden="true">
+                            <use href="#i-gh" />
+                        </svg></span>
+                    <span class="c-text"><small>GitHub</small><b>Mufassir</b></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="wrap footer-in">
+            <div>
+                <a href="#home" class="logo">Sayyad<span>.</span></a>
+                <p>&copy; <span id="year"></span> Sayyad Mufassir. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/repos" target="_blank" rel="noopener" aria-label="GitHub"><svg
+                        aria-hidden="true">
+                        <use href="#i-gh" />
+                    </svg></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg
+                        aria-hidden="true">
+                        <use href="#i-in" />
+                    </svg></a>
+                <a href="mailto:mufassirsayyed03@gmail.com" aria-label="Email"><svg aria-hidden="true">
+                        <use href="#i-mail" />
+                    </svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
